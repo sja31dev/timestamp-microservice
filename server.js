@@ -1,17 +1,6 @@
 
-
-/*var fs = require('fs');*/
 var express = require('express');
 var app = express();
-
-/*app.route('/_api/package.json')
-  .get(function(req, res, next) {
-    console.log('requested');
-    fs.readFile(__dirname + '/package.json', function(err, data) {
-      if(err) return next(err);
-      res.type('txt').send(data.toString());
-    });
-  });*/
 
 app.get('/:string', function(req, res) {
   var date;
